@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>RozgaarSetu - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home – RozgaarSetu</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 
 <body>
 
-<div class="header">Available Jobs</div>
+<header class="top-bar">
+  <h2>Nearby Work</h2>
+</header>
 
-<div class="container">
-
-  <div class="card">
-    <h3>Construction Helper Needed</h3>
-    <p>📍 Jaipur, Rajasthan</p>
-    <p>Daily wage work</p><br>
-    <button class="button button-green">Chat करें</button>
-    <button class="button button-blue">Details देखें</button>
+<main class="container">
+  <div class="job-card">
+    <h3>Construction Helper</h3>
+    <p>📍 1 km · ₹600/day</p>
   </div>
 
-  <div class="card">
-    <h3>Electrician Required</h3>
-    <p>📍 Ajmer</p>
-    <p>Full day work</p><br>
-    <button class="button button-green">Chat करें</button>
-    <button class="button button-blue">Details देखें</button>
+  <div class="job-card">
+    <h3>Electrician</h3>
+    <p>📍 2.5 km · House wiring</p>
   </div>
 
-</div>
+  <div class="job-card">
+    <h3>Farm Labour</h3>
+    <p>📍 3 km · Harvesting</p>
+  </div>
+</main>
 
-<div class="bottom-nav">
-  <button onclick="goTo('create.html')">➕<br>Create</button>
-  <button onclick="goTo('search.html')">🔍<br>Search</button>
-  <button onclick="goTo('home.html')">🏠<br>Home</button>
-  <button onclick="goTo('about.html')">ℹ️<br>About</button>
-  <button onclick="goTo('profile.html')">👤<br>Profile</button>
-</div>
+<nav class="bottom-nav">
+  <a href="home.html"><i class="fa fa-house"></i><span>Home</span></a>
+  <a href="search.html"><i class="fa fa-map"></i><span>Search</span></a>
+  <a href="#"><i class="fa fa-plus"></i><span>Create</span></a>
+  <a href="about.html"><i class="fa fa-info-circle"></i><span>About</span></a>
+  <a href="profile.html"><i class="fa fa-user"></i><span>Profile</span></a>
+</nav>
 
-
-<script src="script.js"></script>
 </body>
 </html>
+
+
 
 
