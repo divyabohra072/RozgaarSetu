@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Work</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<header class="top-bar">
+  <h1>Market Map</h1>
+</header>
+
+<div id="map"></div>
+
+<script>
+  const map = L.map('map').setView([26.9124, 75.7873], 11);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: 'OpenStreetMap'
+  }).addTo(map);
+
+  // Green dots = Job demand
+  L.circleMarker([26.92, 75.78], {color:'green'}).addTo(map).bindPopup("Construction Job");
+  L.circleMarker([26.95, 75.80], {color:'green'}).addTo(map).bindPopup("Electrician Needed");
+
+  // Blue dots = Workers available
+  L.circleMarker([26.90, 75.76], {color:'blue'}).addTo(map).bindPopup("Painter Available");
+  L.circleMarker([26.88, 75.82], {color:'blue'}).addTo(map).bindPopup("Farm Labour");
+</script>
+
+<nav class="bottom-nav">
+  <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+  <a href="search.html" class="active"><i class="fa-solid fa-map"></i><span>Map</span></a>
+  <a href="#"><i class="fa-solid fa-plus"></i><span>Create</span></a>
+  <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
+  <a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+</nav>
+
+</body>
+</html>
 
