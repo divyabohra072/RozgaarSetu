@@ -10,7 +10,6 @@ function goTo(page) {
 ------------------------------ */
 function login() {
   // Simple mock login
-  // Later you can add real auth
   window.location.href = "home.html";
 }
 
@@ -24,27 +23,27 @@ function aiHelp() {
     "• Location\n" +
     "• Timing\n" +
     "• Clear description\n\n" +
-    "बस जानकारी भरें और पोस्ट करें 🙂"
+    "बस जानकारी बोलें या भरें 🙂"
   );
 }
 
 /* -----------------------------
-   Map Initialization (Search Page)
-   Loads ONLY if map container exists
+   Map Initialization
+   Runs ONLY if #map exists
 ------------------------------ */
 function initMap() {
   const mapContainer = document.getElementById("map");
 
-  // Safety check: only run on search.html
+  // Safety check: prevents errors on other pages
   if (!mapContainer) return;
 
-  const map = L.map("map").setView([26.9124, 75.7873], 12); // Jaipur default
+  const map = L.map("map").setView([26.9124, 75.7873], 12); // Jaipur
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution: "© OpenStreetMap contributors"
   }).addTo(map);
 
-  // Green dots = Job Opportunities
+  // 🟢 Job opportunities
   const jobs = [
     { lat: 26.92, lng: 75.78, text: "Construction Work" },
     { lat: 26.91, lng: 75.80, text: "Electrician Needed" },
@@ -60,7 +59,7 @@ function initMap() {
     }).addTo(map).bindPopup(job.text);
   });
 
-  // Blue dots = Workers Available
+  // 🔵 Workers available
   const workers = [
     { lat: 26.93, lng: 75.79, text: "Mason Available" },
     { lat: 26.89, lng: 75.77, text: "Painter Available" }
@@ -80,5 +79,3 @@ function initMap() {
    DOM Ready
 ------------------------------ */
 document.addEventListener("DOMContentLoaded", initMap);
-
-
