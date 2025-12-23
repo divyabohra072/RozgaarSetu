@@ -69,6 +69,18 @@ body {
   margin-top: 20px;
 }
 
+.video-placeholder {
+  background: #eef5ee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #1E7F43;
+}
+
+
+
 
 
 
