@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Search Work</title>
-
+  <title>Search</title>
   <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body>
 
-<header class="top-bar">
-  <h1>Market Map</h1>
-</header>
+<div class="header">Search Nearby</div>
 
-<div id="map"></div>
+<div class="container">
 
-<script>
-  const map = L.map('map').setView([26.9124, 75.7873], 11);
+  <input class="input" placeholder="Search jobs or workers..."/>
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: 'OpenStreetMap'
-  }).addTo(map);
+  <div class="map-preview" onclick="goTo('map.html')">
+    🗺️ Tap to open full map
+  </div>
 
-  // Green dots = Job demand
-  L.circleMarker([26.92, 75.78], {color:'green'}).addTo(map).bindPopup("Construction Job");
-  L.circleMarker([26.95, 75.80], {color:'green'}).addTo(map).bindPopup("Electrician Needed");
+  <div class="card">
+    <h3>👷 Mason Available</h3>
+    <p>📍 2 km away</p>
+  </div>
 
-  // Blue dots = Workers available
-  L.circleMarker([26.90, 75.76], {color:'blue'}).addTo(map).bindPopup("Painter Available");
-  L.circleMarker([26.88, 75.82], {color:'blue'}).addTo(map).bindPopup("Farm Labour");
-</script>
+  <div class="card">
+    <h3>🏗️ Construction Work</h3>
+    <p>📍 4 km away</p>
+  </div>
 
-<nav class="bottom-nav">
-  <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
-  <a href="search.html" class="active"><i class="fa-solid fa-map"></i><span>Map</span></a>
-  <a href="#"><i class="fa-solid fa-plus"></i><span>Create</span></a>
-  <a href="about.html"><i class="fa-solid fa-circle-info"></i><span>About</span></a>
-  <a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a>
-</nav>
+</div>
 
+<div class="bottom-nav">
+  <button onclick="goTo('create.html')">➕<br>Create</button>
+  <button onclick="goTo('search.html')">🔍<br>Search</button>
+  <button onclick="goTo('home.html')">🏠<br>Home</button>
+  <button onclick="goTo('about.html')">ℹ️<br>About</button>
+  <button onclick="goTo('profile.html')">👤<br>Profile</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
+  
 
