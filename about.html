@@ -1,21 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-  <title>Create Post</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – RozgaarSetu</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  
+
 <body>
-  
-<h3>🌾 RozgaarSetu क्या है?</h3>
-<p>
-RozgaarSetu गाँव के कुशल लोगों को उनके आसपास ही काम से जोड़ने का एक प्रयास है।
-अब रोज़गार के लिए शहर पलायन जरूरी नहीं।
-</p>
 
-<h3>🎥 ऐप कैसे इस्तेमाल करें?</h3>
-<p>नीचे दिए गए वीडियो देखें और सीखें।</p>
+<!-- Header -->
+<div class="header">RozgaarSetu के बारे में</div>
 
-  <script src="script.js"></script>
+<!-- Main Content -->
+<div class="container">
+
+  <!-- Intro -->
+  <div class="card">
+    <h3>🌾 RozgaarSetu क्या है?</h3>
+    <p>
+      RozgaarSetu गाँव और छोटे कस्बों के लोगों को उनके आसपास ही काम से जोड़ने का एक डिजिटल प्रयास है।
+      अब रोज़गार के लिए शहर पलायन ज़रूरी नहीं।
+      <br><br>
+      सरल • स्थानीय • भरोसेमंद
+    </p>
+  </div>
+
+  <!-- Video 1 -->
+  <div class="card">
+    <h3>🎥 1. Login / Register कैसे करें?</h3>
+    <p>ऐप में अकाउंट बनाने और शुरू करने की पूरी जानकारी।</p>
+    <div class="video-placeholder">▶ Video Tutorial</div>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="card">
+    <h3>📱 2. ऐप कैसे इस्तेमाल करें?</h3>
+    <p>Home, Search, Chat और Profile को समझें आसान भाषा में।</p>
+    <div class="video-placeholder">▶ Video Tutorial</div>
+  </div>
+
+  <!-- Video 3 -->
+  <div class="card">
+    <h3>✍️ 3. पोस्ट कैसे बनाएं? (खुद और AI से)</h3>
+    <p>
+      खुद लिखकर या AI की मदद से काम/सेवा की पोस्ट बनाना सीखें।
+    </p>
+    <div class="video-placeholder">▶ Video Tutorial</div>
+  </div>
+
+  <!-- Video 4 -->
+  <div class="card">
+    <h3>💼 4. काम के लिए Apply कैसे करें?</h3>
+    <p>
+      पास के काम ढूंढना, chat करना और सही अवसर चुनना।
+    </p>
+    <div class="video-placeholder">▶ Video Tutorial</div>
+  </div>
+
+  <!-- Video 5 -->
+  <div class="card">
+    <h3>🤝 5. Help & Support</h3>
+    <p>
+      किसी भी समस्या में हम आपके साथ हैं।
+      संपर्क करने और सहायता पाने की पूरी जानकारी।
+    </p>
+    <div class="video-placeholder">▶ Video Tutorial</div>
+  </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <button onclick="goTo('create.html')">➕<br>Create</button>
+  <button onclick="goTo('search.html')">🔍<br>Search</button>
+  <button onclick="goTo('home.html')">🏠<br>Home</button>
+  <button onclick="goTo('about.html')">ℹ️<br>About</button>
+  <button onclick="goTo('profile.html')">👤<br>Profile</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+
