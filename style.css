@@ -1,89 +1,74 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
- body {
-  background: linear-gradient(180deg, #E9F7EF, #FFFFFF);
-  color: #1a1a1a;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7fdf9;
 }
 
-
-  
-.header {
-  background: #1E7F43;
-  color: white;
+.top-bar {
+  padding: 12px;
   text-align: center;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background: #4CAF50;
+  color: white;
 }
 
-  
-  
-  .container {
-    padding: 16px;
-    padding-bottom: 80px;
-  }
-  
-  .card {
-  background: #ffffff;
-  border-left: 6px solid #1E7F43;
+.container {
+  padding: 15px;
 }
 
-  
-  .button {
-    padding: 10px 16px;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .button-green {
-    background: #1E7F43;
-    color: white;
-  }
-  
-  .button-blue {
-    background: #1F6AE1;
-    color: white;
-  }
-  
-  .input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-  
-  .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 0;
-    border-top: 1px solid #ddd;
-  }
-  
-  .bottom-nav button {
-    background: none;
-    border: none;
-    font-size: 12px;
-    cursor: pointer;
-  }
-
-.button:active {
-  transform: scale(0.97);
+.job-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-  .center {
-    text-align: center;
-    margin-top: 40px;
-  }
+.job-card button {
+  background: #4CAF50;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 8px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  padding: 8px;
+  text-align: center;
+}
+
+#map {
+  height: calc(100vh - 60px);
+}
+
+.profile-card {
+  text-align: center;
+  padding: 30px;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 120px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+
 
 
