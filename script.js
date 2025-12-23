@@ -79,3 +79,22 @@ function initMap() {
    DOM Ready
 ------------------------------ */
 document.addEventListener("DOMContentLoaded", initMap);
+
+function openNotifications() {
+  document.getElementById("notificationsPanel").classList.add("active");
+  document.getElementById("chatPanel").classList.remove("active");
+}
+
+function openChatbox() {
+  document.getElementById("chatPanel").classList.add("active");
+  document.getElementById("notificationsPanel").classList.remove("active");
+}
+
+document.addEventListener("click", function (e) {
+  if (!e.target.closest(".slide-panel") && !e.target.closest(".icon-btn")) {
+    document.getElementById("notificationsPanel")?.classList.remove("active");
+    document.getElementById("chatPanel")?.classList.remove("active");
+  }
+});
+
+
