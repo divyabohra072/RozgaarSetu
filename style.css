@@ -78,6 +78,34 @@ body {
   font-size: 14px;
   color: #1E7F43;
 }
+.map-preview {
+  background: #e6f4ea;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.map-full {
+  height: 70vh;
+  background: #eef5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.profile-top {
+  text-align: center;
+  padding: 20px;
+}
+
+.avatar {
+  font-size: 48px;
+}
+
+
 
 
 
