@@ -1,66 +1,147 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f7fdf9;
+/* -----------------------------
+   GLOBAL RESET & BASE
+------------------------------ */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7fdf9;
+  color: #1f2937;
+}
+
+/* -----------------------------
+   TOP BAR
+------------------------------ */
+.header,
 .top-bar {
-  padding: 12px;
+  padding: 14px;
   text-align: center;
-  background: #4CAF50;
+  background: #22c55e;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* -----------------------------
+   LAYOUT
+------------------------------ */
+.container {
+  padding: 16px;
+  padding-bottom: 80px; /* space for bottom nav */
+}
+
+.center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* -----------------------------
+   BUTTONS
+------------------------------ */
+.button {
+  width: 90%;
+  max-width: 320px;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-green {
+  background: #22c55e;
   color: white;
 }
 
-.container {
-  padding: 15px;
+.button-blue {
+  background: #2563eb;
+  color: white;
 }
 
+/* -----------------------------
+   JOB CARDS
+------------------------------ */
 .job-card {
   background: white;
-  padding: 15px;
-  margin-bottom: 12px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.05);
 }
 
 .job-card button {
-  background: #4CAF50;
+  margin-top: 10px;
+  background: #22c55e;
   border: none;
-  padding: 8px 15px;
+  padding: 8px 16px;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
+/* -----------------------------
+   BOTTOM NAVIGATION
+------------------------------ */
 .bottom-nav {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   background: white;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #e5e7eb;
+  padding: 6px 0;
 }
 
 .bottom-nav a {
   text-decoration: none;
-  color: #555;
+  color: #4b5563;
   font-size: 12px;
-  padding: 8px;
   text-align: center;
+}
+
+.bottom-nav a span {
+  display: block;
+  font-size: 20px;
+}
+
+/* -----------------------------
+   MAP (SEARCH PAGE)
+------------------------------ */
+.map-preview {
+  background: #e6f4ea;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  cursor: pointer;
 }
 
 #map {
-  height: calc(100vh - 60px);
+  height: 70vh;
+  border-radius: 14px;
 }
 
-.profile-card {
+/* -----------------------------
+   PROFILE PAGE
+------------------------------ */
+.profile-top {
   text-align: center;
-  padding: 30px;
+  padding: 20px;
 }
 
-.profile-card img {
+.profile-top img {
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
-  width: 120px;
+  margin-bottom: 10px;
 }
 
 .stats {
@@ -69,41 +150,31 @@ body {
   margin-top: 20px;
 }
 
+/* -----------------------------
+   ABOUT / VIDEOS
+------------------------------ */
 .video-placeholder {
-  background: #eef5ee;
-  border-radius: 12px;
-  padding: 20px;
-  margin-top: 10px;
+  background: #eefaf2;
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 12px;
   text-align: center;
   font-size: 14px;
-  color: #1E7F43;
-}
-.map-preview {
-  background: #e6f4ea;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  margin-bottom: 16px;
-  cursor: pointer;
+  color: #166534;
 }
 
-.map-full {
-  height: 70vh;
-  background: #eef5ff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
+/* -----------------------------
+   DESKTOP SUPPORT
+------------------------------ */
+@media (min-width: 768px) {
+  .container {
+    max-width: 480px;
+    margin: auto;
+  }
 }
 
-.profile-top {
-  text-align: center;
-  padding: 20px;
-}
 
-.avatar {
-  font-size: 48px;
-}
+
 
 
 
