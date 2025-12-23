@@ -1,47 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Search</title>
+  <title>Search – RozgaarSetu</title>
+
+  <!-- App CSS -->
   <link rel="stylesheet" href="style.css"/>
+
+  <!-- Leaflet CSS (REQUIRED) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
 </head>
 
 <body>
 
-<div class="header">Search Nearby</div>
-
-<div class="container">
-
-  <input class="input" placeholder="Search jobs or workers..."/>
-
-  <div class="map-preview" onclick="goTo('map.html')">
-    🗺️ Tap to open full map
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    Live Opportunity Map
   </div>
 
-  <div class="card">
-    <h3>👷 Mason Available</h3>
-    <p>📍 2 km away</p>
+  <!-- SEARCH BAR -->
+  <div class="container">
+    <input
+      type="text"
+      placeholder="काम या लोग खोजें (Nearby)"
+      class="search-input"
+    />
+
+    <!-- MAP PREVIEW -->
+    <div class="map-wrapper">
+      <div id="map"></div>
+    </div>
   </div>
 
-  <div class="card">
-    <h3>🏗️ Construction Work</h3>
-    <p>📍 4 km away</p>
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav">
+    <a onclick="goTo('create.html')">➕<br>Create</a>
+    <a onclick="goTo('search.html')">🔍<br>Search</a>
+    <a onclick="goTo('home.html')">🏠<br>Home</a>
+    <a onclick="goTo('about.html')">ℹ️<br>About</a>
+    <a onclick="goTo('profile.html')">👤<br>Profile</a>
   </div>
 
-</div>
+  <!-- Leaflet JS (REQUIRED) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-<div class="bottom-nav">
-  <button onclick="goTo('create.html')">➕<br>Create</button>
-  <button onclick="goTo('search.html')">🔍<br>Search</button>
-  <button onclick="goTo('home.html')">🏠<br>Home</button>
-  <button onclick="goTo('about.html')">ℹ️<br>About</button>
-  <button onclick="goTo('profile.html')">👤<br>Profile</button>
-</div>
+  <!-- App JS -->
+  <script src="script.js"></script>
 
-<script src="script.js"></script>
 </body>
 </html>
-
-  
 
